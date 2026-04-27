@@ -135,3 +135,16 @@ const nameSorter = document.querySelector("#name-sorter");
 nameSorter.addEventListener("click", (event) => {
   console.log("You clicked the name sorter");
 });
+// preventDefault() method of the event object:
+nameSorter.addEventListener("click", (event) => {
+  event.preventDefault();
+//   console.log("You clicked the name sorter");
+  // 1.  Get the main element
+  const main = document.querySelector("main");
+
+  // 2. Get the list of parks
+  const parksList = main.querySelectorAll(".park-display");
+
+  // 3. Empty the main element
+  main.innerHTML = "";
+});
