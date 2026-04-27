@@ -127,3 +127,11 @@ allBtns.forEach((btn) => {
     park.style.backgroundColor = "#c8e6c9";
   });
 });
+
+// Select the `nameSorter` link
+const nameSorter = document.querySelector("#name-sorter");
+
+// Add an event listener
+nameSorter.addEventListener("click", (event) => {
+  console.log("You clicked the name sorter");
+});
