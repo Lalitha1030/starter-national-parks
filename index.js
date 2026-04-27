@@ -211,3 +211,11 @@ const nameSorter = document.querySelector("#name-sorter");
 
 // Add an event listener
 nameSorter.addEventListener("click", nameSorterClickHandler);
+
+console.log("Before!");
+
+window.addEventListener("DOMContentLoaded", (event) => {
+  console.log("Loaded!");
+});
+
+console.log("After!");
